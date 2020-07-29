@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{EE50FC68-4AB6-15F9-3C41-2D8499D02781}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Nova",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"UMG"
+			]
+		}
+	]
+}
