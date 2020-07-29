@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="game@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.11">
+    <root id="1">
+      <ServerVersion>0.18.4.1</ServerVersion>
+      <DefaultCasing>exact</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="game">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="hackerton"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <table id="7" parent="2" name="idol"/>
+    <table id="8" parent="2" name="member"/>
+    <column id="9" parent="7" name="groupname">
+      <Position>1</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="10" parent="7" name="membername">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="11" parent="8" name="idx">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="8" name="gamepw">
+      <Position>2</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="8" name="gameid">
+      <Position>3</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="14" parent="8" name="Point">
+      <Position>4</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="15" parent="8" name="Potion100">
+      <Position>5</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="16" parent="8" name="Potion50">
+      <Position>6</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="17" parent="8" name="Gold">
+      <Position>7</Position>
+      <DataType>INT(10)|4s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <index id="18" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idx</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="19" parent="8" name="member_gameid_uindex">
+      <ColNames>gameid</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idx</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="21" parent="8" name="member_gameid_uindex">
+      <ColNames>gameid</ColNames>
+    </key>
+  </database-model>
+</dataSource>

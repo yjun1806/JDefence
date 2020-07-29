@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d7f81f2f-a19d-49e5-a845-70b08955df4c" name="AWS" url="http://54.180.102.168">
+        <fileTransfer host="54.180.102.168" port="22" privateKey="C:\Users\blrul\Dropbox\AWS\keypair-ubuntu.pem" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
